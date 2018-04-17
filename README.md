@@ -27,7 +27,6 @@ This repository hold the code, and configuration files usefull for running this 
  7. use LIM2 ice model, VP rheology.
  8. use BBL (bottom boundary layer) parameterization.
  9. use free slip lateral condition except in the Idonesian through-flow area, Mediterannean Sea, West coast of Greenland ( near cape desolation) and in the northern part of Nares Strait.
-10. Use TOP with CFC passive tracers.
 
 ### Forcing:
  1. This run uses DFS4.4 daily climatology with CORE bulk formulae. For the climatological run, we use 9 atmospheric fields instead of the standard 8 fields, replacing u10 and v10 wind component by the wind speed daily climatology (|W10| ) and the pseudo stress components ( |W10|.u10, |W10|.v10 ).
@@ -60,9 +59,6 @@ This repository hold the code, and configuration files usefull for running this 
  * Ice Initialisation : ```ORCA12.L46-MAL95_y1998-2007m01_icemod_initMAL101.nc```
  * Bottom Friction enhancement : ```orca12_bfr_coef_MAL101.nc```
  * AABW damping mask : ```ORCA12.L46_dmp_mask.nc```
- * CFC atmospherique : ```cfc1112_updated4.atm```
-
-
 
 ### Bibliography:
 Molines J.M., B. Barnier, T. Penduff, A.M. Treguier, J. Le Sommer. "ORCA12.L46 climatological and inter annual simulations forced with DFS4.4: GJM02 and MJM88.",  Drakkar Group Experiment report GDRI-DRAKKAR-2014-03-19 (2014) [Technical Report](https://www.drakkar-ocean.eu/publications/reports/orca12_reference_experiments_2014)
